@@ -50,6 +50,7 @@ button {
     color: #404bbf;
 }
 
+.header-menu-link:hover,
 .header-menu-link:focus {
     color: #404bbf;
 }
