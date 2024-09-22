@@ -4,17 +4,35 @@ body {
     background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
     font-style: normal;
+    color: currentColor;
 }
 
 button {
     cursor: pointer;
+}
+
+address {
+    font-style: normal;
 }
 
 .logotype {
@@ -27,15 +45,45 @@ button {
     color: #4d5ae5;
 }
 
+.container {
+    max-width: 1098px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+
 /* header */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 
 .header-logo-studio {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;        font-size: 18px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link {
@@ -56,6 +104,12 @@ button {
 
 .header-address {
     font-style: normal;
+    margin-left: 332px;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-address-link {
@@ -74,6 +128,11 @@ button {
 
 .hero {
     background-color: #2e2f42;
+}
+
+.hero-wrap {
+    display: flex;
+    padding: 188px 472px;
 }
 
 .hero-title {
@@ -102,6 +161,15 @@ button {
 
 /* features */
 
+.features {
+    padding: 120px 156px;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
 .features-list-title {
     font-weight: 500;
     font-size: 20px;
@@ -121,17 +189,23 @@ button {
 
 .team {
     background-color: #f4f4fd;
+    padding: 120px 156px;
 }
 
 .team-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
 
 .team-list-item {
     background-color: #ffffff;
@@ -144,17 +218,23 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-list-wrap {
+    padding: 32px 16px;
 }
 
 .team-list-text {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #434455;
 }
 
+
 /* product */
+
+.product {
+    padding: 120px 156px;
+}
 
 .product-title {
     font-weight: 700;
@@ -164,6 +244,13 @@ button {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.product-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .product-list-title {
@@ -172,19 +259,19 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .product-list-text {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
 
 /* footer */
 
 .footer {
     background-color: #2e2f42;
+    padding-top:100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo-studio {
@@ -195,6 +282,7 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -202,4 +290,5 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 26px;
 }
