@@ -286,8 +286,16 @@ body {
 }
 
 .product-list-item {
+  width: calc((100% - 72px) / 3);
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list-img {
+  width: 100;
+  height: auto;
+  object-fit: cover;
 }
 
 .product-list-title {
@@ -309,6 +317,10 @@ body {
 .product-list-wrap {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* footer */
